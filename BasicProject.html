@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍅 Tomatoohhh!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        background-color: #f6e9e1;
+        margin-top: -515px;
+        max-width: 100%;
+      }
+      .heading {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/351/original/Tomaten-200-DSC08242.jpg?1637417942");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        z-index: 0;
+      }
+      .navigation {
+        background-color: transparent;
+        position: sticky;
+        text-align: right;
+        top: 0%;
+        z-index: 10;
+      }
+      ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0px 20px;
+        padding: 0px;
+        text-align: right;
+        text-orientation: sideways-right;
+        writing-mode: vertical-lr;
+      }
+      li {
+        display: inline;
+        position: relative;
+        text-align: right;
+      }
+      a {
+        border: 1px solid #ffa500;
+        color: #ffa500;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 30px 20px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        z-index: 4;
+      }
+      a:hover {
+        background-color: #ffa500;
+        color: #f6e9e1;
+        cursor: pointer;
+      }
+      h1 {
+        color: #f6e9e1;
+        font-family: "Playfair Display", serif;
+        font-size: 100px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding-top: 100px;
+        text-align: center;
+      }
+      h2 {
+        color: #f6e9e1;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+        margin-top: 10px;
+        padding-bottom: 100px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .wrapperBreeding {
+        display: flex;
+        height: 350px;
+        margin-bottom: 30px;
+        position: relative;
+        width: 100%;
+      }
+      .firstBreeding {
+        display: inline-block;
+        margin: 20px 50px 20px 150px;
+        padding-top: 15px;
+        width: 50%;
+      }
+      .secondBreeding {
+        display: flex;
+        justify-content: center;
+        margin: 20px 170px 20px 50px;
+        width: 50%;
+      }
+      .wrapperSeed {
+        display: flex;
+        height: 350px;
+        margin-bottom: 30px;
+        position: relative;
+        position: relative;
+        width: 100%;
+      }
+      .firstSeed {
+        display: flex;
+        justify-content: center;
+        margin: 0px 50px 0px 150px;
+        width: 50%;
+      }
+      .secondSeed {
+        display: inline-block;
+        margin: 0px 170px 0px 50px;
+        padding-top: 50px;
+        width: 50%;
+      }
+      .wrapperWhatWeDo {
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 420px;
+        margin-bottom: 30px;
+      }
+      .firstWhatWeDo {
+        display: inline-block;
+        margin: 20px 50px 20px 150px;
+        padding-top: 10px;
+        width: 50%;
+      }
+      .secondWhatWeDo {
+        display: flex;
+        justify-content: center;
+        margin: 20px 170px 20px 50px;
+        width: 50%;
+      }
+      .wrapperTaste {
+        display: flex;
+        height: 350px;
+        margin-bottom: 30px;
+        position: relative;
+        width: 100%;
+      }
+      .firstTaste {
+        display: flex;
+        justify-content: center;
+        margin: 0px 50px 0px 150px;
+        width: 50%;
+      }
+      .secondTaste {
+        display: inline-block;
+        margin: 0px 170px 0px 50px;
+        padding-top: 40px;
+        width: 50%;
+      }
+      h3 {
+        color: #c85103;
+        float: none;
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin: auto;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        width: 90%;
+      }
+      p {
+        float: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        margin: auto;
+        margin-top: 10px;
+        opacity: 0.9;
+        position: relative;
+        vertical-align: middle;
+        width: 90%;
+      }
+      .basket {
+        border-radius: 4px;
+        display: block;
+        float: none;
+        margin: auto;
+        max-width: 100%;
+        position: relative;
+      }
+      .orangeTomato {
+        margin: 80px 340px 0px 0px;
+        position: absolute;
+        width: 400px;
+      }
+      .glasses {
+        border-radius: 4px;
+        display: block;
+        float: none;
+        margin: auto;
+        max-width: 100%;
+        position: relative;
+      }
+      .greenTomato {
+        margin: 170px 390px 0px 0px;
+        position: absolute;
+        width: 300px;
+      }
+      iframe {
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        transition: all 200ms ease-in-out;
+        z-index: 15;
+      }
+      iframe.hover {
+        cursor: pointer;
+      }
+      .tasting {
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        position: relative;
+      }
+      .redTomato {
+        margin: 170px 450px 0px 0px;
+        position: absolute;
+        width: 300px;
+      }
+      hr {
+        border-top: 1px dotted #c85103;
+        max-width: 60%;
+      }
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 30%;
+      }
+      button {
+        background-color: #f6e9e1;
+        border: 1px solid #c85103;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(200, 81, 3, 0.3);
+        color: #c85103;
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto;
+        padding: 10px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #c85103;
+        color: #f6e9e1;
+        cursor: pointer;
+      }
+      footer {
+        color: #c85103;
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 20px;
+        opacity: 0.7;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a
+              href="https://www.arche-noah.at/sortenerhaltung/sorten-entwickeln/das-bauernparadeiser-projekt"
+              target="_blank"
+              class="about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.arche-noah.at/files/samtflecken_broschuere_web.pdf"
+              target="_blank"
+              class="findOutMore"
+              >Find out more</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.arche-noah.at/sortenerhaltung/sorten-entwickeln/paradeiser-patenschaft"
+              target="_blank"
+              class="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="heading">
+        <h1>Tomatoohhh!</h1>
+        <h2>Participative Organic Breeding</h2>
+      </div>
+
+      <div class="wrapperBreeding">
+        <div class="firstBreeding">
+          <h3>organic breeding</h3>
+          <br />
+          <p>
+            Organic farming starts with breeding.
+            <strong>Organic plant breeding</strong> bears a high potential to
+            provide farms with varieties perfectly adapted to organic farming.
+            Organic plant breeding contributes to the organic farming goals such
+            as the work in accordance with biological systems and to have a
+            positive impact on biodiversity – as organic breeders work with a
+            broader genetic base than conventional breeders.
+          </p>
+        </div>
+        <div class="secondBreeding">
+          <img class="basket"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/347/original/DSC03870.jpg?1637416608/>
+          <img class="orangeTomato"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/410/original/6-removebg-preview.png?1637506601/>
+        </div>
+      </div>
+
+      <br />
+      <div class="wrapperSeed">
+        <div class="firstSeed">
+          <img class="glasses"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/348/original/IMG_20210908_134245.jpg?1637416849/>
+          <img class="greenTomato"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/411/original/7-removebg-preview.png?1637506820/>
+        </div>
+        <div class="secondSeed">
+          <h3>seed sovereignty</h3>
+          <br />
+          <p>
+            ‘<strong>Seed Sovereignty</strong> reclaims seeds and Biodiversity
+            as commons and public good. The farmers rights to breed and exchange
+            diverse Open Source Seeds which can be saved and which are not
+            patented, genetically modified, owned or controlled by emerging seed
+            giants’. - Lexicon of Food
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="wrapperWhatWeDo">
+        <div class="firstWhatWeDo">
+          <h3>what we do</h3>
+          <br />
+          <p>
+            We are working on seed sovereignty in a practical way by breeding
+            new tomato varieties, together with local farmers, that matches
+            their location and needs. Taste and plant health are at the top of
+            the list. We are thus creating an alternative to the range offered
+            by large seed companies, which primarily focus on criteria such as
+            yield, uniformity and shelf life of the fruit. Our aim is to bring
+            improved varieties back to society and to pass on knowledge about
+            practical plant breeding to interested commercial and home
+            gardeners. Around 30 decentralised breeding programs are currently
+            being carried out on around 15 farms.
+          </p>
+        </div>
+        <div class="secondWhatWeDo">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZoA35Ske2NE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <br />
+      <div class="wrapperTaste">
+        <div class="firstTaste">
+          <img class="tasting"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/350/original/IMG_20210729_122400.jpg?1637417769/>
+          <img class="redTomato"
+          src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/412/original/5-removebg-preview_%281%29.png?1637507044/>
+        </div>
+        <div class="secondTaste">
+          <h3>old-fashioned tomato flavour</h3>
+          <br />
+          <p>
+            One of our main breeding focuses is <strong>taste</strong>. Working
+            on new variety, to us, always means searching for the
+            <em>"old-fashioned tomato flavour"</em>. We meet for tastings and
+            examine and compare the different flavours, also keeping differences
+            in terroir in mind. Only the best-flavoured breeding lines will
+            pass.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <img class="logo"
+      src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/407/original/4-removebg-preview.png?1637504879/>
+      <button>Donate now!</button>
+      <footer>Coded with ❤️ by Katrin Kanape</footer>
+    </div>
+    <script>
+      let donateButton = document.querySelector("button");
+      donateButton.addEventListener("click", donateNow);
+      function donateNow() {
+        let firstName = prompt("What is your name?");
+        let address = prompt("What is your email address?");
+        let amount = prompt("How much would you like to donate?");
+
+        if (amount >= 100) {
+          alert(
+            `🍅 Oh my gosh ${firstName}! You're our hero! We'll be in touch with you soon! 🍅`
+          );
+        } else {
+          alert(
+            `🍅 Hey ${firstName}! Thank you so much for your support. We'll be in touch with you soon! 🍅`
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
